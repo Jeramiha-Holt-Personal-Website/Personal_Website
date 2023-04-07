@@ -1,0 +1,88 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    /* min-height: 100vh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px inset black;
+}
+header h1{
+    font-size: 3.1rem;
+    font-weight: 600;
+    margin: 10px 5px;
+    padding: 10px 10px 10px 20px;
+    text-transform: uppercase;
+}
+header .pages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .pages a{
+    font-size: 3rem;
+    margin: 10px 5px;
+    padding: 0px 5px 0px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+header .pages a:visited{
+    text-decoration: none;
+    color: black;
+}
+main .home{
+    background-color: rgb(49, 146, 146);
+    /* height: ; */
+    /* display: flex; */
+    margin-bottom: 20px;
+}
+main .home .home-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 800px;
+    background-color: rgb(61, 171, 171);
+}
+main .home .home-about h2{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 20px 10px 20px 10px;
+    
+}
+main .home .home-about p{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0px 10px 20px 10px;
+}
+main .home .home-about q{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    padding: 30px 20px 30px 20px;
+    margin: 40px 10px 80px 10px;
+    text-align: center;
+}
+main .footer{
+    height: 100px;
+}
+main .footer .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
