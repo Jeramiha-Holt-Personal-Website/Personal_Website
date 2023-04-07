@@ -8,7 +8,14 @@ html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
 }
-
+hr{
+    width: 96%;
+    border: 0;
+    clear: both;
+    display: block;
+    background-color: black;
+    height: 1px;
+}
 .container{
     /* min-height: 100vh; */
     width: 100%;
@@ -57,7 +64,7 @@ main .home .home-about{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    max-width: 800px;
+    max-width: 900px;
     background-color: rgb(61, 171, 171);
 }
 main .home .home-about h2{
@@ -66,10 +73,82 @@ main .home .home-about h2{
     margin: 20px 10px 20px 10px;
     
 }
+main .home .home-about .activity{
+    margin: 15px 15px 15px 15px;
+}
+main .home .home-about .activity h3{
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+}
+main .home .home-about .activity .description{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+main .home .home-about .activity .description img{
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin-right: 15px;
+}
+main .home .home-about .activity .description p{
+    padding-left: 15px;
+}
+main .home .home-about .project{
+    /* margin */
+    /* width: 750px; */
+    padding: 50px 50px;
+}
+main .home .home-about .project h3{
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: white;
+    text-decoration: underline;
+    padding: 10px 0px 10px 10px;
+    /* padding-bottom: 15px; */
+}
+main .home .home-about .project hr{
+    /* margin-bottom: 15px; */
+    padding-bottom: 15px;
+    /* color: black; */
+    width: 800px;
+    background-color: white;
+    /* background-color: white; */
+}
+main .home .home-about .project .description{
+    background-color: white;
+    padding: 10px 10px;
+}
+main .home .home-about .project .description img{
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin-right: 15px;
+}
+main .home .home-about .project .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+main .home .home-about .project .link a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(61, 171, 171);
+    border: 2px solid black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+main .home .home-about .project .link a:visited{
+    text-decoration: none;
+    color: white;
+}
 main .home .home-about p{
     font-size: 2rem;
     font-weight: 400;
     margin: 0px 10px 20px 10px;
+
 }
 main .home .home-about q{
     font-family: 'Ubuntu', sans-serif;
