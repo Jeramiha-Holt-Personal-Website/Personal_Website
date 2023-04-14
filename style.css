@@ -23,6 +23,11 @@ hr{
     align-items: center;
     justify-content: center;
 }
+span{
+    color: red;
+}
+
+/* Header Section */
 header{
     display: flex;
     justify-content: space-between;
@@ -50,19 +55,22 @@ header .pages a{
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    transition: 0.3s ease-in-out;
+}
+header .pages a:hover{
+    transform: scale(1.1);
 }
 header .pages a:visited{
     text-decoration: none;
     color: black;
 }
+/* End of Header Section */
+
+/* Home-about layout Section */
 main .home{
     background-color: rgb(49, 146, 146);
-    /* height: ; */
-    /* display: flex; */
     margin-bottom: 20px;
-    /* width: 100vw; */
-    /* overflow: hidden; */
-    /* min-width: 0; */
+    padding-bottom: 40px;
 }
 main .home .home-about{
     display: flex;
@@ -80,6 +88,22 @@ main .home .home-about h2{
     margin: 20px 10px 20px 10px;
     
 }
+main .home .home-about p{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0px 10px 20px 10px;
+
+}
+main .home .home-about q{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    padding: 30px 20px 30px 20px;
+    margin: 40px 10px 80px 10px;
+    text-align: center;
+}
+/* End of home-about layout Section*/
+
+/* About Section */
 main .home .home-about .activity{
     margin: 15px 15px 15px 15px;
 }
@@ -101,6 +125,9 @@ main .home .home-about .activity .description img{
 main .home .home-about .activity .description p{
     padding-left: 15px;
 }
+/* End of About Section */
+
+/* Portfolio Section */
 main .home .home-about .project{
     /* margin */
     /* width: 750px; */
@@ -148,32 +175,76 @@ main .home .home-about .project .link a{
     border: 2px solid black;
     text-transform: uppercase;
     margin-bottom: 10px;
+    transition: .3s ease-in;
+}
+main .home .home-about .project .link a:hover{
+    background-color: black;
+    border: 2px solid rgb(61, 171, 171);
 }
 main .home .home-about .project .link a:visited{
     text-decoration: none;
     color: white;
 }
-main .home .home-about p{
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 0px 10px 20px 10px;
+/* End of Project Section */
+
+/* Contact Section */
+main .home .home-about .header{
+    background-color: rgba(219, 216, 216, 0.985);
+    /* margin: 0px 100px; */
+    max-width: 900px;
+    padding: 0px 100px;
+    border: 2px groove black;
+}
+/* main .home .home-about form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+main .home .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
-main .home .home-about q{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 3rem;
-    padding: 30px 20px 30px 20px;
-    margin: 40px 10px 80px 10px;
-    text-align: center;
+main .home .home-about form .contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0px;
 }
-main .footer{
+main .home .home-about form .contact-form label{
+    font-size: 2rem;
+    padding-bottom: 5px;
+    /* margin: 15px 0px; */
+}
+main .home .home-about form .contact-form input{
+    width: calc(100% - 10px);
+}
+main .home .home-about form .contact-form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+/* End of Contact Section */
+
+/* Footer Section */
+footer .footer{
     height: 100px;
 }
-main .footer .social-icon{
+footer .footer .social-icon{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* End of Footer Section */
+
+
 
 @media only screen and (max-width: 768px) {
     header{
